@@ -328,6 +328,10 @@ button.dark-mode:hover {
   <img src="https://static.vecteezy.com/system/resources/previews/007/873/029/large_2x/illustration-of-piano-icon-musical-instrument-tone-logo-suitable-for-websites-apps-free-vector.jpg" alt="Piano">
   <p>Piano</p>
 </div>
+    <div class="icon" onclick="openApp('app10')">
+      <img src="https://imgproxy.attic.sh/insecure/f:webp/q:90/w:1200/plain/https://attic.sh/pgzk713p12edj6zh5tzf13ltzzuj" alt="App 10">
+      <p>Glas D</p>
+    </div>
 
   </div>
 
@@ -351,6 +355,7 @@ button.dark-mode:hover {
     <div class="start-menu-item">Notepad</div>
     <div class="start-menu-item" onclick="openApp('app8')">$Zokra</div>
     <div class="start-menu-item" onclick="openApp('app9')">Piano</div>
+    <div class="start-menu-item" onclick="openApp('app10')">Glas D</div>
   </div>
 
   <!-- App Windows (hidden initially) -->
@@ -427,6 +432,20 @@ button.dark-mode:hover {
   </div>
   <div class="window-resize-handle" onmousedown="startResizing(event, 'app8')"></div>
 </div>
+
+  <div id="app10" class="window">
+    <div class="title-bar">
+      Glas D
+      <div class="buttons">
+        <button onclick="closeWindow('app10')">X</button>
+        <button onclick="minimizeWindow('app10')">-</button>
+      </div>
+    </div>
+    <div class="content">
+      <iframe src="https://3abath.github.io/gr/" title="Glas D" class="iframe-content" style="width: 100%; height: 100%;"></iframe>
+    </div>
+    <div class="window-resize-handle" onmousedown="startResizing(event, 'app10')"></div>
+  </div>
   
   <script>
     // App Management (Open, Minimize, Close)
